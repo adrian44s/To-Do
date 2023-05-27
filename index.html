@@ -9,15 +9,41 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Task List</h1>
-      <form class="newtask">
-        <input type="text" class="newtaskinp" placeholder="What's for today" />
-        <input type="submit" class="newtasksub" value="Add task" />
-      </form>
-    </header>
-
     <main>
+      <header>
+        <div class="greeting">
+          <h1 class="title">
+            What's up <from class="name" palceholder="Name here"></from>
+          </h1>
+        </div>
+        <h2>Task List</h2>
+        <form class="newtask">
+          <input
+            type="text"
+            class="newtaskinp"
+            placeholder="What's for today"
+          />
+          <input type="submit" class="newtasksub" value="Add task" />
+          <h3>Pick a category</h3>
+          <div class="options">
+            <label>
+              <input type="radio" name="category" class="category1" />
+              <span class="bubble work"></span>
+              <div>Work</div>
+            </label>
+            <label>
+              <input type="radio" name="category" class="category1" />
+              <span class="bubble university"></span>
+              <div>Universiy</div>
+            </label>
+            <label>
+              <input type="radio" name="category" class="category1" />
+              <span class="bubble personal"></span>
+              <div>Personal</div>
+            </label>
+          </div>
+        </form>
+      </header>
       <div class="task-list">
         <h2>Tasks</h2>
 
