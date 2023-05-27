@@ -23,7 +23,7 @@
             class="newtaskinp"
             placeholder="What's for today"
           />
-          <input type="submit" class="newtasksub" value="Add task" />
+
           <h3>Pick a category</h3>
           <div class="options">
             <label>
@@ -34,7 +34,7 @@
             <label>
               <input type="radio" name="category" class="category1" />
               <span class="bubble university"></span>
-              <div>Universiy</div>
+              <div>University</div>
             </label>
             <label>
               <input type="radio" name="category" class="category1" />
@@ -42,21 +42,55 @@
               <div>Personal</div>
             </label>
           </div>
+          <input type="submit" class="newtasksub" value="Add task" />
         </form>
       </header>
+
       <div class="task-list">
         <h2>Tasks</h2>
-
         <div id="tasks">
-          <!-- <div class="tasks">
-          <div class="content">
-            <input type="text" class="text" value="My task" readonly />
+          <div class="todo-item">
+            <label>
+              <input type="checkbox" />
+              <span class="bubble university"></span>
+            </label>
+            <div class="todo-content">
+              <input type="text" value="hello" />
+            </div>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
           </div>
-          <div class="actions">
-            <button class="edit">Edit</button>
-            <button class="delete">Delete</button>
+
+          <div class="todo-item">
+            <label>
+              <input type="checkbox" />
+              <span class="bubble work"></span>
+            </label>
+            <div class="todo-content">
+              <input type="text" value="make a video" />
+            </div>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
           </div>
-        </div> -->
+
+          <div class="todo-item">
+            <label>
+              <input type="checkbox" />
+              <span class="bubble personal"></span>
+            </label>
+            <div class="todo-content">
+              <input type="text" value="hello" />
+            </div>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div>
+
         </div>
       </div>
     </main>
