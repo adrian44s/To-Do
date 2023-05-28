@@ -17,7 +17,6 @@ window.addEventListener("load", () => {
 
     const taskContentElement = document.createElement("div");
     taskContentElement.classList.add("content");
-    // taskContentElement.innerText = task;
 
     taskEl.appendChild(taskContentElement);
 
